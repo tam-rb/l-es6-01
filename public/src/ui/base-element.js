@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-export class BaseElementJquery{
+export class BaseElement{
     constructor (){
         this.element = null;
     }
@@ -8,6 +8,7 @@ export class BaseElementJquery{
     appendToElement(el){
         this.createElement();
         el.append(this.element);
+        this.enableJS();
     }
     
     createElement(){
@@ -17,5 +18,9 @@ export class BaseElementJquery{
 
     getElementString(){
         throw 'please override getElementString() in BaseElementJquery';
+    }
+
+    enableJS(){
+        componentHandler.upgradeElement(this.element[0]);
     }
 }

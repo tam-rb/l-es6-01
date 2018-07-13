@@ -1,6 +1,6 @@
-import {BaseElementJquery} from './base-element-jquery.js';
+import {BaseElement} from './base-element.js';
 
-export class Button extends BaseElementJquery {
+export class Button extends BaseElement {
     constructor(title){
         super();
         this.title = title;
@@ -8,7 +8,7 @@ export class Button extends BaseElementJquery {
 
     getElementString(){
         return  `
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
         ${this.title}
       </button>
         `

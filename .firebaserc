@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "l-es6-01"
+    "default": "flappy-replica",
+    "flappy-replica": "flappy-replica"
   }
 }
