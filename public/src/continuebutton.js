@@ -3,9 +3,9 @@ class ContinueButton{
         this.text = "continue";
         this.img = img;
         this.h = 30;
-        this.w = 120;
-        this.x = width/2 - this.w/2;  
-        this.y = height / 2 - this.h/2 + 350;
+        this.w = 120;        
+        this.x = config.frameW/2 - 80;  
+        this.y = config.frameH -this.h - 120;
     }
 
     show(){        

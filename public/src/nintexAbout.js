@@ -25,8 +25,8 @@ class NintexAbout{
     getRandom(){
         var myNumber = Math.floor(Math.random()*18);
         myNumber = myNumber *50 + 65;
-        if(myNumber > config.frameH - 100){
-            myNumber = myNumber - 100;
+        if(myNumber > config.frameH - 250){
+            myNumber = myNumber - 250;
         }
         return myNumber;
     }
